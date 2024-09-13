@@ -21,7 +21,7 @@ describe('Onboarding Sunscription flow', () => {
     cy.get('input[id="field-:r2:"]', { timeout: 6000 }).click()
     .type('Harmonics');
     cy.get('input[id="field-:r3:"]', { timeout: 6000 }).click()
-    .type('Qeen.111111101111101101.1121221111112.3.4.5.6.7.8.8.9.0.98.765@mailinator.com');
+    .type('Qeen.1111111101111101101.1121221111112.3.4.5.6.7.8.8.9.0.98.765@mailinator.com');
     cy.get('input[id="field-:r4:"]', { timeout: 6000 }).click()  
     .type('08164545594');
     cy.get('select', { timeout: 6000 }).select('Nigeria');
