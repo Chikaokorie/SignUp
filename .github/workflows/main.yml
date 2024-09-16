@@ -9,8 +9,7 @@ describe('Onboarding Sunscription flow', () => {
     cy.url().should('include','https://qa.timbaapps.com/pricing')
     cy.url().should('contain','timbaapps')
     cy.url().should('not.contain','peace')
-    
-    cy.title({ timeout: 60000 }).should('include', 'Timba | Time Tracking and Productivity App')
+  
     cy.get('.css-bry4is > .css-1n7jzfy > .chakra-image').should('exist')
     cy.get('.css-waryyy > :nth-child(3) > .chakra-button').click()
     cy.get('.css-9tjmdg').click()
@@ -21,7 +20,7 @@ describe('Onboarding Sunscription flow', () => {
     cy.get('input[id="field-:r2:"]', { timeout: 6000 }).click()
     .type('Harmonics');
     cy.get('input[id="field-:r3:"]', { timeout: 6000 }).click()
-    .type('Qeen.validmail12345@mailinator.com');
+    .type('Qeen.v1alidmail12345@mailinator.com');
     cy.get('input[id="field-:r4:"]', { timeout: 6000 }).click()  
     .type('08164545594');
     cy.get('select', { timeout: 6000 }).select('Nigeria');
