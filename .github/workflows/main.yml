@@ -13,7 +13,8 @@ describe('Onboarding Sunscription flow', () => {
     cy.get('.css-bry4is > .css-1n7jzfy > .chakra-image').should('exist')
     cy.get('.css-waryyy > :nth-child(3) > .chakra-button').click()
     cy.get('.css-9tjmdg').click()
-    cy.get('input[id="field-:r0:"]', { timeout: 10000 }).click()
+    cy.get('input[id="field-\\:r0\\:"]', { timeout: 15000 }).click();
+
     .type('John');
     cy.get('input[id="field-:r1:"]', { timeout: 6000 }).click()
     .type('John');
